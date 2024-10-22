@@ -1,0 +1,132 @@
+/* Close button styling */
+.close-modal {
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  width: 5%;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #343030; /* Darker red on hover */
+}
+
+/* Error text styling */
+b {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: red;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: left; /* Align error details to the left */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Modal hidden state */
+.hidden {
+  display: none;
+}
+
+/* Modal styling */
+.modall {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 40%; /* Responsive width */
+  background: linear-gradient(135deg, #f7f8f8, #eef2f3); /* Subtle gradient */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -25%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -20%);
+  }
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 5;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modall {
+    width: 80%; /* Adjust width on smaller screens */
+    padding: 2rem;
+  }
+
+  .close-modal {
+    font-size: 2rem; /* Smaller close button */
+    top: -2rem;
+    right: 1rem;
+  }
+
+  b {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modall {
+    width: 90%;
+    padding: 1.5rem;
+    top: 10%;
+  }
+
+  .close-modal {
+    font-size: 1.8rem; /* Smaller close button for mobile */
+    top: -2rem;
+    right: 1rem;
+  }
+
+  b {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

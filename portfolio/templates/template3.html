@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/static/CSS/template3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>{{firstname}} {{lastname}}</h1>
+                <p>{{designation}}</p>
+                <p>{{location}}</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="left-section">
+                <h2>About Me</h2>
+                <p>{{about}}</p>
+
+                <br><br>
+                
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>{{skill1}}</li>
+                    <li>{{skill2}}</li>
+                    <li>{{skill3}}</li>
+                    <li>{{skill4}}</li>
+                </ul>
+            </section>
+
+            <section class="right-section">
+                <h2>Work Experience</h2>
+                <div class="work-experience">
+                    <h5>{{company}}</h5>
+                    <p>{{work}}</p>
+                </div>
+
+                <br><br>
+
+                <h2>Education</h2>
+                <p>{{college}}</p>
+                <p>{{education}}</p>
+
+                <br><br>
+
+                <h2>Contact</h2>
+                <p>Mail : {{mail}}</p>
+                <p>Phone : {{phone}}</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 {{firstname}}. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

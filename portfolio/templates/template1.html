@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/template1.css">
+    <title>Template 1</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>{{firstname}} {{lastname}}</h1>
+            <p>{{designation}}</p>
+            <p>{{location}}</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>{{about}}</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul style="list-style-type: disc;">
+                <li>{{skill1}}</li>
+                <li>{{skill2}}</li>
+                <li>{{skill3}}</li>
+                <li>{{skill4}}</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>{{education}} from {{college}} </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <p>{{company}} - {{work}}.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>{{phone}}</p>
+            <p>{{mail}}</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 {{firstname}}. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

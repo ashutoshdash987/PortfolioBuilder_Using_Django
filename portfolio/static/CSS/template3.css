@@ -1,0 +1,100 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #01ae8c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgb(91, 5, 132);
+    background-color: rgb(224, 224, 224);
+    border-radius: 12px;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+}
+
+.work-experience {
+    margin-top: 20px;
+}
+
+.work-experience h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.work-experience p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        padding: 0;
+    }
+}

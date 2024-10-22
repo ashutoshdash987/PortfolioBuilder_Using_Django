@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="/static/CSS/template5.css">
+</head>
+<body>
+
+    <section id="header">
+        <h1>Hey, I'm {{firstname}} {{lastname}}</h1>
+        <p><i>{{designation}}</i></p>
+    </section>
+
+
+    <section id="about" class="contain-section">
+        <h2 class="contain-section-header">About Me</h2>
+        <div class="contain-grid">
+            <div class="work contain-tile">
+                <p>{{about}}</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="work" class="contain-section">
+        <h2 class="contain-section-header">Work Experience</h2>
+        <div class="contain-grid">
+            <div class="work contain-tile">
+                <h5 class="contain-title">{{company}}</h5>
+                <p class="contain-title">{{work}}</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="contain-section">
+        <h2 class="contain-section-header">Education</h2>
+        <div class="contain-grid">
+            <div class="work contain-tile">
+                <h5 class="contain-title">{{college}}</h5>
+                <p class="contain-title">{{education}}</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="contain-section">
+        <h2 class="contain-section-header">Skills</h2>
+        <div class="contain-grid">
+            <div class="work contain-tile">
+                <ul>
+                    <li>{{skill1}}</li>
+                    <li>{{skill2}}</li>
+                    <li>{{skill3}}</li>
+                    <li>{{skill4}}</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact">
+        <h5>Contact me </h5>
+        <p>Mail: {{mail}} , Phone: {{phone}}</p>
+    </footer>
+</body>
+</html>
